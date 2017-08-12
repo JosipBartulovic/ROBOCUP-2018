@@ -1,4 +1,4 @@
-PUBLIC FUNCTIONS:
+PUBLIC FUNCTIONS:\n
 		MotorDrive(unsigned char switch_pin, 
 				unsigned char motor_l_pwm_pin, 
 				unsigned char motor_l_fwd_pin,
