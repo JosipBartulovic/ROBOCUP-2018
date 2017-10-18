@@ -1,4 +1,5 @@
-#include "Robot.h"
+#include "lib.h"
+#include "Arduino.h"
 
 SensorArray::SensorArray(unsigned char *sensor_pin_array, unsigned char array_size){
 	this->sensor_array = sensor_pin_array;
@@ -99,5 +100,3 @@ unsigned char SensorArray::getRightSize(){
 	
 	return counter;
 }
-
-

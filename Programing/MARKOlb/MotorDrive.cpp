@@ -1,4 +1,4 @@
-#include "MotorDrive.h"
+#include "lib.h"
 
 MotorDrive::MotorDrive(unsigned char switch_pin, 
 				unsigned char motor_l_pwm_pin, 

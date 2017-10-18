@@ -1,8 +1,0 @@
-PUBLIC FUNCTIONS:
-		SensorArray(unsigned char *sensor_pin_array, unsigned char array_size);
-		unsigned char *getValueArray();
-		float getAnalogValue();
-		unsigned char getLineWidth();
-		unsigned char getLeftSize();
-		unsigned char getRightSize();
-	
