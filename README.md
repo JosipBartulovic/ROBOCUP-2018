@@ -1,3 +1,4 @@
 # ROBOCUP-2018
-Repozitorij za razvoj line following robota za ROBOCUP 2018
-Jeah boy dobia sam permisije picko
+Centralna vrijednost IC senzora: 4,50
+Far left vrijednost: 6,50
+Fer right vrijednost: 2,50

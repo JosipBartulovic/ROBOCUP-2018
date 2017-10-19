@@ -4,13 +4,12 @@
 SensorArray::SensorArray(unsigned char *sensor_pin_array, unsigned char array_size){
 	this->sensor_array = sensor_pin_array;
 	this->number_of_sensors = array_size;
-	
-	for(int i=0; i<array_size; i++){
+  this->value_array = new unsigned char[array_size];
+  this->middle = (unsigned char)(array_size/2);
+  
+  for(int i=0; i<array_size; i++){
 		pinMode(i, INPUT);
 	}
-	
-	this->value_array = new unsigned char[array_size];
-	this->middle = (unsigned char)(array_size/2);
 	
 	if(array_size%2 != 0){
 		this->middle++;
@@ -30,7 +29,6 @@ unsigned char *SensorArray::getValueArray(){
 	for(int i=0; i<this->number_of_sensors; i++){
 		this->value_array[i] = digitalRead(this->sensor_array[i]);
 	}
-	
 	return value_array;
 }
 
@@ -53,7 +51,6 @@ float SensorArray::getAnalogValue(){
 		return 0;
 		}
 	return ret;
-	
 }
 	
 
